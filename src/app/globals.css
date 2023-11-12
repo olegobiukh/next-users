@@ -25,3 +25,56 @@ body {
     )
     rgb(var(--background-start-rgb));
 }
+
+.page {
+  @apply grid min-h-screen place-content-center place-items-center;
+}
+
+.page__wrapper {
+  @apply p-5 border border-solid border-gray-700 rounded min-w-[363px];
+  background-color: rgb(186, 186, 186, 24%);
+  max-width: 95%;
+}
+
+.items {
+  @apply grid gap-0.5 mt-5;
+}
+
+.page__top {
+  @apply grid grid-flow-col justify-between;
+}
+.page__title {
+  @apply m-0 font-mono uppercase text-2xl text-gray-300;
+}
+.item__user {
+  @apply grid grid-flow-col justify-between bg-slate-400 bg-opacity-20 border border-gray-800 px-2 py-1.5 rounded-md font-mono uppercase text-sm font-semibold;
+}
+
+.item {
+  @apply bg-slate-400 bg-opacity-20 border border-gray-800 px-2 py-1 rounded-md;
+}
+
+.item__body {
+  @apply text-gray-600 text-white rounded bg-opacity-50;
+}
+
+.item__title {
+  @apply font-mono uppercase text-sm font-semibold;
+}
+
+.item__name {
+  @apply text-white text-base;
+}
+
+.group__button {
+  @apply grid grid-flow-col gap-3;
+}
+
+.button {
+  @apply bg-blue-500 text-white px-6 py-1 rounded-md cursor-pointer outline-none;
+}
+
+.page__width {
+  @apply max-w-xl;
+  width: 550px;
+}
