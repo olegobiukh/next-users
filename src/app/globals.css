@@ -43,19 +43,33 @@ body {
 .page__top {
   @apply grid grid-flow-col justify-between;
 }
+
+.page__top--posts {
+  cursor: pointer;
+}
+
 .page__title {
   @apply m-0 font-mono uppercase text-2xl text-gray-300;
 }
+
 .item__user {
   @apply grid grid-flow-col justify-between bg-slate-400 bg-opacity-20 border border-gray-800 px-2 py-1.5 rounded-md font-mono uppercase text-sm font-semibold;
 }
 
 .item {
-  @apply bg-slate-400 bg-opacity-20 border border-gray-800 px-2 py-1 rounded-md;
+  @apply bg-slate-400 bg-opacity-20 border border-gray-800 px-2 py-1 rounded-md overflow-hidden;
 }
 
 .item__body {
-  @apply text-gray-600 text-white rounded bg-opacity-50;
+  @apply text-gray-600 text-white rounded bg-opacity-50 h-0;
+}
+
+.item__body--active {
+  @apply h-28;
+}
+
+.i-arrow {
+  filter: invert(1);
 }
 
 .item__title {
@@ -71,7 +85,7 @@ body {
 }
 
 .button {
-  @apply bg-blue-500 text-white px-6 py-1 rounded-md cursor-pointer outline-none;
+  @apply font-mono font-normal uppercase bg-blue-500 text-white px-6 py-1 rounded-md cursor-pointer outline-none;
 }
 
 .page__width {

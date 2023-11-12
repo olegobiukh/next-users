@@ -8,6 +8,9 @@ export interface Item {
   title: string;
   body?: string;
 }
+export interface ItemsProps {
+  posts: Item[];
+}
 
 export interface ParemsProps {
   params: {
