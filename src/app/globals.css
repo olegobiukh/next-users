@@ -100,4 +100,7 @@ body {
   .page__wrapper {
     @apply min-h-screen;
   }
+  .group__button {
+    @apply grid-flow-row;
+  }
 }
