@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Head from "next/head";
 import { getPosts } from "@/_utils/api";
 import { Item, ParemsProps } from "@/_utils/ts";
 import PostList from "@/app/components/PostList";
@@ -8,6 +9,10 @@ const Posts: React.FC<ParemsProps> = async ({ params }) => {
 
   return (
     <div className="page__wrapper page__width">
+      <Head>
+        <title>Users</title>
+        <meta name="description" content="User list" />
+      </Head>
       <div className="page__top">
         <h2 className="page__title">Posts of user: {params.id}</h2>
         <Link href={`/`}>

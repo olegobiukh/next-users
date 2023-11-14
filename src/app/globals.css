@@ -89,6 +89,15 @@ body {
 }
 
 .page__width {
-  @apply max-w-xl;
-  width: 550px;
+  max-width: 550px;
+  width: 100vw;
+}
+
+@media screen and (max-width: 550px) {
+  .page {
+    @apply place-content-baseline;
+  }
+  .page__wrapper {
+    @apply min-h-screen;
+  }
 }
